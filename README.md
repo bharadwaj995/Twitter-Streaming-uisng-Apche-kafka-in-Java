@@ -48,7 +48,7 @@ kafka-topics --zookeeper 127.0.0.1:2181 --topic tweets --create --partitions 6 -
 
 ```
 
-As discussed in the  [previous](https://notjustcoders.com/kafka/kafka-java-tutorial/)  post, add producer configurations to a Kafka producer constructor to instantiate Kafka producer. Also, in the type definition, we have to specify the type of  **_key_**  and  _**value**_  too.
+
 
 ```
 KafkaProducer<String, String> producer = new KafkaProducer<String, String>(KafkaProducerConfig.getProperties());
